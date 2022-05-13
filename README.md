@@ -23,7 +23,6 @@ model = CvT(
     s1_depth = 3, 
     s1_mlp_mult = 4, 
 
-        
     s2_emb_dim1 = 192, 
     s2_emb_dim2 = 256, 
     s2_emb_kernel = 3, 
@@ -34,7 +33,6 @@ model = CvT(
     s2_depth = 6, 
     s2_mlp_mult = 4, 
 
-        
     s3_emb_dim1 = 256, 
     s3_emb_dim2 = 384, 
     s3_emb_kernel = 3, 
