@@ -1,6 +1,5 @@
 # Our-S model and DistillWrapper
-
-
+···
 import torch
 import CvT
 from torchvision.models import wide_resnet50_2
@@ -57,3 +56,4 @@ student_logits = model(image)
 
 loss = distiller(image, label, student_logits)    # student_logits is model output
 loss.backward()
+···
