@@ -1,9 +1,9 @@
 # Our-S model and DistillWrapper
 ```
 import torch
-import CvT
+from model import CvT
+from distill import DistillWrapper
 from torchvision.models import wide_resnet50_2
-import DistillWrapper
 
 teacher = wide_resnet50_2(pretrained = False)
 
