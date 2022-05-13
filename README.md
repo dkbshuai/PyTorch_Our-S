@@ -1,4 +1,7 @@
 # Our-S model and DistillWrapper
+
+![](https://raw.githubusercontent.com/dkbshuai/PyTorch-Our-S/main/model%20pipeline.png)
+
 ```
 import torch
 from model import CvT
