@@ -38,4 +38,3 @@ class DistillWrapper(nn.Module):
         hard_distill_loss = F.cross_entropy(student_logits, teacher_labels)
 
         return loss + soft_distill_loss * alpha + hard_distill_loss * (1 - alpha)
-        
