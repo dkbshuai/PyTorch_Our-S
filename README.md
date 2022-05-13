@@ -11,7 +11,7 @@ from torchvision.models import wide_resnet50_2
 teacher = wide_resnet50_2(pretrained = False)
 
 model = CvT(
-    num_classes,
+    num_classes = 42,
     
     s1_emb_dim1 = 96, 
     s1_emb_dim2 = 128, 
