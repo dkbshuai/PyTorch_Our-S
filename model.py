@@ -33,16 +33,6 @@ class LayerNorm(nn.Module):
         mean = torch.mean(x, dim = 1, keepdim = True)
         return (x - mean) / (std + self.eps) * self.g + self.b
     
-class attnPreNorm(nn.Module):
-    def __init__(self, dim, fn):
-        super().__init__()
-        self.norm = LayerNorm(dim)
-        self.fn = fn
-        
-    def forward(self, x, scale, **kwargs):
-        x = self.norm(x)
-        return self.fn(x, scale,**kwargs)
-    
 class PreNorm(nn.Module):
     def __init__(self, dim, fn):
         super().__init__()
