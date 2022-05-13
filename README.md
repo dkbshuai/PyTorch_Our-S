@@ -1,4 +1,4 @@
-# Our-S model and DistillWrapper
+# Our-S and DistillWrapper
 
 ![](https://raw.githubusercontent.com/dkbshuai/PyTorch-Our-S/main/model%20pipeline.png)
 
