@@ -4,13 +4,13 @@
 
 ```
 import torch
-from model import Our
+from model import Our-S
 from distill import DistillWrapper
 from torchvision.models import wide_resnet50_2
 
 teacher = wide_resnet50_2(pretrained = False)
 
-model = Our(
+model = Our-S(
     num_classes = 42,
     
     s1_emb_dim1 = 96, 
