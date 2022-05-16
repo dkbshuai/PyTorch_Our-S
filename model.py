@@ -98,7 +98,7 @@ class Transformer(nn.Module):
             x = ff(x) + x
         return x
 
-class CvT(nn.Module):
+class Our(nn.Module):
     def __init__(
         self,
         *,
